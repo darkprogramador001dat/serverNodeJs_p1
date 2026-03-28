@@ -1,6 +1,0 @@
-/* Certifcado SSL para porta HTTPS */
-
-sudo apt install openssl
-openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
-openssl req -new -key private_key.pem -out request.csr
-openssl x509 -req -in request.csr -signkey private_key.pem -out certificate.pem -days 365
