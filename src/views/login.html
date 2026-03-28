@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-initial-dad">
+        <div class="container-top">
+            <div class="container-in-header">
+                <header class="header">
+                    <img src="/header-in-image-background2.png" alt="banner-squareroom.tech" id="header-img" title="squareroom.tech">
+                </header>
+                <div class="container-header-links">
+                    <div class="context-in-header-links">
+                        <a href="https://127.0.0.1:3001" title="página inicial" class="alinks-header">página inicial</a>
+                        <a href="https://127.0.0.1:3001/registered" title="criar conta" class="alinks-header">registrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-form">
+            <div class="context-form">
+                <section class="container-section-in-form">
+                    <h2 id="h2-create-account" title="access my account">Acessar conta</h2>
+                    <form action="/login" method="post" id="form-login">
+                        <label for="username" title="">Nome de Usuário: </label>
+                        <input type="text" id="username" name="username" placeholder="username" autocomplete="username" title="usuario" required>
+
+                        <label for="password" title="">Senha: </label>
+                        <input type="password" id="password" name="password" placeholder="password" autocomplete="current-password" title="senha" required>
+                        <div class="container-btn-register-and-alink">
+                            <div class="context-btn-link">
+                                <button type="submit" id="btn-login" title="acessar conta">acessar</button>
+                                <a href="https://127.0.0.1:3001/registered" id="link-register" title="criar conta">registrar</a>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div class="container-footer" title="squareroom.tech">
+            <footer class="footer">
+                <address id="address">
+                    Nossa página foi construída com o objetivo de fornecer conhecimento em tecnologia, máquinas, hacking e programação. Nosso servidor está hospedado nos servidores da Squareroom.tech 
+                </address>
+            </footer>
+        </div>
+    </div>
+    <script>
+        document.getElementById("form-login").addEventListener("submit", function(e)
+        {
+            let btn = document.getElementById("btn-login");
+
+            btn.innerText = "Entrando...";
+            btn.disabled = true;
+
+            let password = document.getElementById("password").value;
+            let confirm_password = document.getElementById("confirm_passowrd").value;
+            if (password.length < 8) {
+                alert("senha mínimo 8 digitos");
+                e.preventDefault();
+                return;
+            } 
+            if (password !== confirm_password) {
+                alert(" senhas devem ser iguais");
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

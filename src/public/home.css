@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #edf6f9;
+}
+.container-initial {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*-------------      Header  --------------*/
+.container-height {
+    width: 100%;
+    height: 380px;
+}
+.context-heigth-banner-alink {
+    width: 100%;
+    height: auto;
+    background-color: rgb(152, 254, 0);
+}
+.img-container-for-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+}
+
+#img-header {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.context-link {
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid #fff;
+    height: 40px;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.a-link-banner {
+    display: block;
+    margin: 10px 20px 0 20px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 2px;
+}
+.a-link-banner:hover {
+    border-bottom: 1px solid #fff;
+    color: #00d9ff;
+}
+
+@media (max-width:600px){
+
+    .container-height{
+        height: auto;
+    }
+
+    .img-container-for-header{
+        flex-direction: column;
+    }
+
+    #img-banner{
+        width: 100%;
+        height: auto;
+    }
+
+    .context-link{
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a-link-banner{
+        margin: 6px 0;
+        font-size: 14px;
+    }
+
+}
+/* ----------------------------------------*/
+
+
+/* ---------- Section Container -----------*/
+.container-height-center {
+    width: 100%;
+    display: block;
+}
+.container-center {
+    width: 100%;
+    height: auto;
+    margin-top: 8%;
+}
+.section-context {
+    margin: auto;
+    text-align: justify;
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+}
+
+.img-hardware-describe {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.img-centralized {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+#img-hardware {
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 4px;
+}
+
+#paragraph-welcome {
+    font-size: 14px;
+}
+#h3-hardware-describe {
+    text-align: center;
+    margin-top: 50px;
+}
+#strong-paragraph-describe {
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+    .section-context {
+        width: 80%;
+        margin: auto;
+    }
+    #paragraph-welcome {
+        font-size: 10px;
+    }
+    #h3-hardware-describe {
+        font-size: 14px;
+    }
+}
+
+/*-----------------------------------------*/
+
+
+/*-------- Container SIDEBAR --------------*/
+
+.container-left-height-width {
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    right: 0;
+}
+.container-sidebar {
+    width: auto;
+    height: auto;
+    padding: 0.1px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.a-links-sidebar {
+    font-size: 14px;
+    text-decoration: none;
+    color: #9f4695;
+    width: 100%;
+}
+.a-links-sidebar:hover {
+    color: #000;
+}
+
+@media (max-width: 700px){
+
+    .container-left-height-width{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .container-sidebar{
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+    .a-links-sidebar {
+        font-size: 10px;
+    }
+
+}
+
+/*-----------------------------------------*/
+
+/*------------ Container FOOTER -----------*/
+.container-footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+#footer {
+    width: 100%;
+    height: auto;
+    background-image: url("/home.gif");
+    object-fit: cover;
+    object-position: center;
+}
+.container-address {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#address {
+    background-color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 10px;
+    color: #fff;
+    width: 300px;
+    height: auto;
+}
+@media (max-width: 600px){
+    .container-footer {
+        margin-top: 40px;
+    }
+
+    #address {
+        width: 200px;
+        font-size: 10px;
+    }
+
+}

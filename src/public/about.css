@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 30px 50px;
+    border: 3px solid #00ffcc;
+    animation: bordaPisca 1.5s infinite;
+}
+
+.letreiro {
+    color: #00ffcc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    cursor: pointer;
+    animation: textoPisca 1.5s infinite;
+}
+
+@keyframes textoPisca {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes bordaPisca {
+    0% {
+    box-shadow: 0 0 5px #00ffcc;
+    opacity: 1;
+    }
+    50% {
+    box-shadow: 0 0 25px #00ffcc;
+    opacity: 0.6;
+    }
+    100% {
+    box-shadow: 0 0 5px #00ffcc;
+    opacity: 1;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    margin-top: 30px;
+    max-width: 700px;
+    color: #00ffcc;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.info h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.info p {
+    font-size: 14px;
+    opacity: 0.9;
+}

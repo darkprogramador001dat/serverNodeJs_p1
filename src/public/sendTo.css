@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #edf6f9;
+}
+.container-forum {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.forum {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12%;
+}
+.form {
+    display: flex;
+}
+#ipt-username {
+    display: flex;
+    margin-left: 10px;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+}
+.container-textarea {
+    display: flex;
+}
+textarea {
+    margin-top: 20px;
+    resize: none;
+    width: 500px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+}
+.container-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#btn {
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+a {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}

@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bee9e8;
+}
+.container-initial-dad {
+    width: 100%;
+    height: 100vh;
+}
+
+/* |+++++++++++++++++++++++| */
+/* |   Container - Header  | */
+/* |+++++++++++++++++++++++| */
+.container-top 
+{
+    width: 100%;
+    padding: 0.1px;
+    margin: 0;
+}
+.container-in-header {
+    width: 100%;
+    height: 400px;
+    background-color: #000814;
+}
+.header {
+    width: 100%;
+    height: 372px;
+    display: flex;
+}
+.container-header-links {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.context-in-header-links {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+.alinks-header {
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin: 0 20px 0 20px;
+    color: #0466c8;
+    padding: 6px 4px 6px 4px;
+}
+.alinks-header:hover {
+    width: auto;
+    text-decoration: line-through;
+    color: #ffd500;
+}
+#header-img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+    height: 372px;
+}
+
+/* |+++++++++++++++++++++++| */
+/* |   Container - Form    | */
+/* |+++++++++++++++++++++++| */
+.container-form {
+    width: 100%;
+    height: 260px;
+    margin-top: 50px;
+}
+.context-form {
+    width: 100%;
+    height: auto;
+}
+.container-section-in-form {
+    width: 200px;
+    height: 260px;
+    margin: auto;
+}
+#form-login {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+input {
+    width: auto;
+    display: flex;
+    margin: auto auto 10px auto;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+label {
+    width: auto;
+    margin: auto auto auto 20px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+#h2-create-account {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+/* Botoes */
+.container-btn-register-and-alink {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.context-btn-link {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#btn-login {
+    width: auto;
+    margin: 0 10px 0 10px;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+#link-register {
+    font-size: 12px;
+    color: #0466c8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 10px 0 10px;
+    width: auto;
+    text-decoration: none;
+}
+
+
+/* |+++++++++++++++++++++++| */
+/* |   Container - Footer  | */
+/* |+++++++++++++++++++++++| */
+.container-footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 10%;
+    background-image: url('/home.gif');
+    object-fit: cover;
+    object-fit: contain;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#address {
+    margin-top: 4px;
+    padding: 10px;
+    width: 300px;
+    font-size: 12px;
+    background-color: #000;
+    color: #bee9e8;
+}
